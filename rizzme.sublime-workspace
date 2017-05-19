@@ -1,0 +1,476 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"Index.html"
+			],
+			[
+				"if",
+				"if()"
+			],
+			[
+				"mar",
+				"marginTop\tStyle CSS"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"clas",
+				"class\tAttr"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"max",
+				"max( values...: number ): number\tMath"
+			],
+			[
+				"box",
+				"boxarts"
+			],
+			[
+				"consol",
+				"console.log()"
+			],
+			[
+				"boxme",
+				"boxMesh2"
+			],
+			[
+				"Basicm",
+				"THREE.MeshBasicMaterial"
+			],
+			[
+				"Ge",
+				"THREE.CubeGeometry"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"stop",
+				"stopAud"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"pro",
+				"prop"
+			],
+			[
+				"paddin",
+				"padding-left"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"inline-b",
+				"inline-block"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"id",
+				"id\tAttr"
+			],
+			[
+				"ty",
+				"type\tAttr"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"backgroundColor",
+				"background-color"
+			],
+			[
+				"on",
+				"onclick\tAttr"
+			],
+			[
+				"se",
+				"section\tTag"
+			],
+			[
+				"ul",
+				"ul\tTag"
+			],
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"fot",
+				"footer\tTag"
+			],
+			[
+				"head",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pac",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 120.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/trabajo/For ElMakan/Rizzme",
+		"/E/trabajo/For ElMakan/Rizzme/js"
+	],
+	"file_history":
+	[
+		"/E/trabajo/For ElMakan/Rizzme/Manage_Dashboard.html",
+		"/E/trabajo/For ElMakan/Rizzme/registration.html",
+		"/E/trabajo/For ElMakan/Rizzme/course_registeration.html",
+		"/E/trabajo/For ElMakan/Rizzme/Index.html",
+		"/E/trabajo/For ElMakan/Rizzme/css/Main.css",
+		"/E/trabajo/For ElMakan/Rizzme/js/datepicker.js",
+		"/E/trabajo/For ElMakan/Rizzme/js/add_buttons.js",
+		"/E/trabajo/For ElMakan/Rizzme/Complete_course_registeration.html",
+		"/E/trabajo/For ElMakan/Rizzme/css/dropdown_enhancement.css",
+		"/E/trabajo/For ElMakan/Rizzme/js/dropdown_enhancement.js",
+		"/E/trabajo/For ElMakan/Rizzme/home.html",
+		"/E/trabajo/For ElMakan/Rizzme/index.html",
+		"/E/trabajo/For ElMakan/Rizzme/js/rating.js",
+		"/E/trabajo/For ElMakan/Rizzme/rizzme.sublime-project",
+		"/C/Users/Koko/AppData/Roaming/Sublime Text 3/Settings/SideBarEnhancements.json",
+		"/C/Users/Koko/Desktop/New folder/startbootstrap-sb-admin-gh-pages/index.html",
+		"/E/trabajo/For ElMakan/Rizzme/css/bootstrap.css",
+		"/C/Users/Koko/Desktop/exercises.js",
+		"/C/Users/Koko/Desktop/qqqq.js",
+		"/C/Users/Koko/Desktop/modle.js",
+		"/C/Users/Koko/Documents/Visual Studio 2013/Projects/Dxf Writter 01/Dxf Writter 01/Try 1 Classes/EXAMPLE.txt",
+		"/C/Users/Koko/Desktop/WebGl2/SolarSystem.html",
+		"/C/Users/Koko/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Koko/Desktop/Pro.Html",
+		"/G/Customization/LISP/Works/1- Finished/aramco/20160114/20151110 - for batch.lsp",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 2/Player.css",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 2/Music Player.html",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 2/Player.js",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 3/2/Animate.html",
+		"/F/_NEW Terminal D/ITI/Courses/05 - Client Side Technologies/Project/1- Final Isa/Project/css/home.css",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 3/1/canvas.html",
+		"/F/old labtop/web works/web/IDEL MASTER/layout/_js/home.js",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 1/Form.html",
+		"/F/_NEW Terminal D/ITI/Courses/05 - Client Side Technologies/Project/1- Final Isa/Project/home.html",
+		"/F/_NEW Terminal D/ITI/Courses/05 - Client Side Technologies/Assignments/Lab 7/animated menu.html",
+		"/F/_NEW Terminal D/ITI/Courses/05 - Client Side Technologies/Assignments/Lab 6/Move In Box.htm",
+		"/F/_NEW Terminal D/ITI/Courses/12- HTML 5/Labs/Lab 1/canvas.html",
+		"/C/Users/Koko/Desktop/XML-Day1/Lab1/Lab1/1-instructions.dtd",
+		"/C/Users/Koko/Desktop/XML-Day1/Lab1/Lab1/2-TVSched.xml",
+		"/C/Users/Koko/Desktop/XML-Day1/Lab1/Lab1/1- .xml",
+		"/C/Users/Koko/Desktop/XML-Day1/Lab1/Lab1/TVSCHEDDTD-SOLUTION.dtd.dtd",
+		"/C/Users/Koko/Desktop/XML-Day1/Lab1/Lab1/2- .dtd"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"btn",
+			"</h4>",
+			"rizzm",
+			"progress-bar-success active",
+			"active",
+			"rizzm",
+			"Rizzme",
+			"rizzme",
+			"div",
+			"col-md-5",
+			"col-md-4 control-label",
+			"col-md-4",
+			"category",
+			"<a href",
+			"<a href=\"#basic\">",
+			"fa-user",
+			"Admin Sakr:",
+			"glyphicon-eye-open",
+			"<td><a href=\"#\"><h4><i class=\"glyphicon glyphicon-trash\"></i></h4></a></td>",
+			"glyphicon glyphicon-home",
+			"glyphicon glyphicon-user",
+			"glyphicon-home",
+			"<tr class=\"clickable-row\">",
+			"\"clickable-row\"",
+			"<h4>",
+			"h4",
+			"trash",
+			"panel-body",
+			"div",
+			"<div class=\"col-xs-3\"><div class=\"panel panel-default\"><div class=\"panel-body\">\n\t\t<h4> <i class=\"fa fa-file-text-o\"></i> Register </h4>\n\t</div></div></div>",
+			"panel",
+			"existing",
+			"p",
+			"class",
+			"\n\t\t",
+			"link",
+			");\n",
+			">\n",
+			"></"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Rizzmi"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "rizzme.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

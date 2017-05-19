@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Rizzmi</title>
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dropdown_enhancement.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" 
+        data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Rizzmi</a>
+        <ul class="breadcrumb list-inline">
+          <li><a href="Manage_Dashboard.html">Dashboard</a></li>
+          <li class="active">Course registeration</li>
+        </ul>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin Admin <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li>
+                <a href="Index.html" data-toggle="collapse" data-target="#home">
+                <i class="fa fa-fw fa-home"></i> Home </a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#manage">
+                <i class="fa fa-fw fa-dashboard"></i> Manage</h3> <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="manage" class="collapse">
+                    <li><a href="Manage_Dashboard.html">Dashboard</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Admins</a></li>
+                    <li><a href="#">Communication</a></li>
+                    <li><a href="#">Financial</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#analyze">
+                <i class="fa fa-fw fa-signal"></i> Analyze <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="analyze" class="collapse">
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Financial</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#settings">
+                <i class="fa fa-fw fa-cog"></i> Settings <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="settings" class="collapse">
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Admins</a></li>
+                    <li><a href="#">Colors</a></li>
+                    <li><a href="#">Communication</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Addons</a></li>
+                    <li><a href="#">Help desk</a></li>
+                </ul>
+            </li>                   
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+<div id="page-wrapper"><div class="container-fluid"> 
+<!-- start page  -->
+<div class="alert alert-info">
+    <p><i class="fa fa-lightbulb-o"></i>&nbsp;&nbsp; This page shows a list of shortcut orders and also the notifications of  all sorts of activities happening in your space.</p>
+</div>
+
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#basic" data-toggle="tab">Basic Info</a></li>
+  <li><a href="#criculam" data-toggle="tab">Criculam</a></li>
+  <li><a href="#pricing" data-toggle="tab">Pricing</a></li>
+  <li><a href="#faq" data-toggle="tab">FAQ.</a></li>
+  <li><a href="#signup" data-toggle="tab">Signup form</a></li>
+</ul>
+
+<div class="tab-content" style="margin-top: 25px;">
+<div id="basic" class="tab-pane active">
+    <form class="form-horizontal">
+    <fieldset>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="course_name">Course Name</label>  
+      <div class="col-md-5">
+      <input id="course_name" name="course_name" type="text" placeholder="Enter Course Name" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <!-- Select Multiple -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="category">Category</label>
+      <div class="col-md-8">
+        <div class="btn-group">
+          <button class="btn btn-default" data-label-placement>Select Category</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><input type="checkbox" id="opt11" name="NAME" value="1"><label for="opt11">Category 1</label></li>
+              <li><input type="checkbox" id="opt12" name="NAME" value="2"><label for="opt12">Category 2</label></li>
+              <li><input type="checkbox" id="opt13" name="NAME" value="3"><label for="opt13">Category 3</label></li>
+              <li><input type="checkbox" id="opt14" name="NAME" value="4"><label for="opt14">Category 4</label></li>
+              <li><input type="checkbox" id="opt15" name="NAME" value="5"><label for="opt15">Category 5</label></li>
+              <!-- Other items -->
+            </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="Level">Level </label>
+      <div class="col-md-5">
+        <div class="btn-group">
+          <button class="btn btn-default" data-label-placement>Select Location</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><input type="radio" id="level1" name="Level" value="1"><label for="level1">Beginner</label></li>
+              <li><input type="radio" id="level2" name="Level" value="2"><label for="level2">Intermediate</label></li>
+              <li><input type="radio" id="level3" name="Level" value="3"><label for="level3">Expert</label></li>
+              <li><input type="radio" id="level4" name="Level" value="3"><label for="level4">All levels</label></li>
+              <!-- Other items -->
+            </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Select Multiple -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="trainer">Trainer</label>
+      <div class="col-md-8">
+        <div class="btn-group">
+          <button class="btn btn-default" data-label-placement>Select Trainer</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><input type="checkbox" id="opt21" name="NAME" value="1"><label for="opt21">Trainer 1</label></li>
+              <li><input type="checkbox" id="opt22" name="NAME" value="2"><label for="opt22">Trainer 2</label></li>
+              <li><input type="checkbox" id="opt23" name="NAME" value="3"><label for="opt23">Trainer 3</label></li>
+              <li><input type="checkbox" id="opt24" name="NAME" value="4"><label for="opt24">Trainer 4</label></li>
+              <li><input type="checkbox" id="opt25" name="NAME" value="5"><label for="opt25">Trainer 5</label></li>
+              <!-- Other items -->
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prepended checkbox -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="code">Course Code</label>
+      <div class="col-md-2">
+        <div class="input-group">
+          <span class="input-group-addon">     
+              <input type="checkbox">     
+          </span>
+          <input id="code" name="code" class="form-control" type="text" placeholder="categ-01" required="">
+        </div>
+        <p class="help-block">automated</p>
+      </div>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="details">About the course</label>
+      <div class="col-md-5">                     
+        <textarea class="form-control" id="details" name="details">Details about the course</textarea>
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="lect_no">No. of total lectures</label>  
+      <div class="col-md-5">
+      <input id="course_name" name="course_name" type="text" placeholder="Enter Total number of lectures" class="form-control input-md" required="">
+      <!-- <span class="help-block">help</span>   -->
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="lectures">Lectures </label>
+      <div class="col-md-3">
+        <div class="btn-group">
+          <button class="btn btn-default" data-label-placement>Select Lecture Days</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><input type="checkbox" id="Sat" name="NAME" value="1"><label for="Sat">Saturday</label></li>
+              <li><input type="checkbox" id="Sun" name="NAME" value="2"><label for="Sun">Sunday</label></li>
+              <li><input type="checkbox" id="Mon" name="NAME" value="3"><label for="Mon">Monday</label></li>
+              <li><input type="checkbox" id="Tue" name="NAME" value="4"><label for="Tue">Tuesday</label></li>
+              <li><input type="checkbox" id="Wed" name="NAME" value="5"><label for="Wed">Wednesday</label></li>
+              <li><input type="checkbox" id="Thr" name="NAME" value="5"><label for="Thr">Thrusday</label></li>
+              <li><input type="checkbox" id="Fri" name="NAME" value="5"><label for="Fri">Friday</label></li>
+              <!-- Other items -->
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="lectures">Lectures </label>
+      <div class="col-md-5">
+        <div class="btn-group">
+          <button class="btn btn-default" data-label-placement>Select Location</button>
+          <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><input type="radio" id="loc1" name="NAME" value="1"><label for="loc1">Cairo</label></li>
+              <li><input type="radio" id="loc2" name="NAME" value="2"><label for="loc2">Alex</label></li>
+              <li><input type="radio" id="loc3" name="NAME" value="3"><label for="loc3">Menoufia</label></li>
+              <!-- Other items -->
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="max_no">Max. no.</label>  
+      <div class="col-md-5">
+      <input id="max_no" name="max_no" type="text" placeholder="Enter Maximum Number of students" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-2 control-label" for="min_no">Min. no.</label>  
+      <div class="col-md-5">
+      <input id="min_no" name="min_no" type="text" placeholder="Enter Maximum Number of students" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-xs-3">
+            <img src="img/200X200.png" alt="" class="img-responsive">
+            <h5><button class="btn btn-primary btn-xs">Upload</button> Profile Picture </h5>
+        </div>
+        <div class="col-xs-9">
+            <img src="img/200X700.png" alt="" class="img-responsive">
+            <h5><button class="btn btn-primary btn-xs">Upload</button> Banner </h5>
+
+        </div>
+    </div>
+
+
+
+    <hr class="featurette-divider">
+    <!-- Button -->
+    <div class="form-group">
+      <div class="col-md-2">
+        <button id="submit" name="submit" class="btn btn-primary">submit</button>
+      </div>
+    </div>
+
+    </fieldset>
+    </form>
+</div>
+
+<div id="criculam" class="tab-pane">
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-2">
+          <button id="add_section" class="btn btn-primary pull-right" style="margin-bottom: 20px;">Add section</button>
+      </div>
+    </div>
+    <form class="form-horizontal">
+    <fieldset id="sections">
+    </fieldset>
+    </form>
+</div>
+</div>
+<div id="pricing" class="tab-pane">
+  <div class="container-fluid">
+    <form class="form-horizontal">
+      <fieldset>
+      <div class="pricegrp">
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="grp">Group Name</label>  
+          <div class="col-md-5">
+          <input id="grp" name="grp" type="text" placeholder="Enter Group Name" class="form-control input-md" required="">
+          <!-- <span class="help-block">help</span>   -->
+          </div>
+          <a href="#" class="btn btn-default rem_prcgrp"><i class="glyphicon glyphicon-trash"></i></a> <a href="#" class="btn btn-default add_prcgrp"><i class="glyphicon glyphicon-plus"></i></a>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="prc">Price</label>  
+          <div class="col-md-5">
+          <input id="prc" name="prc" type="text" placeholder="Enter Price" class="form-control input-md" required="">
+          <!-- <span class="help-block">help</span>   -->
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label" for="frm">From</label>  
+          <div class="col-md-5">
+          <input id="frm" name="frm" placeholder="DD/MM/YYYY" type="text" class="form-control input-md" required="">
+          <!-- <span class="help-block">help</span>   -->
+          </div>
+        </div>
+        <div class="form-group">`
+          <label class="col-md-2 control-label" for="to">To</label>  
+          <div class="col-md-5">
+          <input id="to" name="to" placeholder="DD/MM/YYYY" type="text" class="form-control input-md" required="">
+          <!-- <span class="help-block">help</span>   -->
+          </div>
+        </div>
+        <hr class="featurette-divider">
+      </div>
+      </fieldset>
+    </form>
+    <button class="btn btn-primary">Add coupon</button>
+  </div>
+
+</div>
+
+
+<div id="faq" class="tab-pane">
+  <div class="container-fluid">
+      <form class="form-horizontal">
+    <fieldset>
+  <!-- Text input-->
+  <div class="question">
+  <div class="form-group">
+        <label class="col-md-2 control-label" for="lect_no">Question 1</label>  
+        <div class="col-md-5">
+        <input id="course_name" name="course_name" type="text" placeholder="Enter Question body" class="form-control input-md" required="">
+        <!-- <span class="help-block">help</span>   -->
+        </div>
+        <a href="#" class="btn btn-default rem_question"><i class="glyphicon glyphicon-trash"></i></a> <a href="#" class="btn btn-default add_question"><i class="glyphicon glyphicon-plus"></i></a>
+  </div>
+  <!-- text area -->
+        <div class="form-group">
+        <label class="col-md-2 control-label" for="details">Answer</label>
+        <div class="col-md-5">                     
+          <textarea class="form-control" id="details" name="details">detailed answer</textarea>
+        </div>
+      </div>   
+  <hr class="featurette-divider">
+  </div>
+  </fieldset></form>
+  </div>
+</div>
+
+<div id="signup" class="tab-pane">   
+  <div class="container-fluid">
+      <form class="form-horizontal">
+      <fieldset>
+  <!-- Text input-->
+  <div class="question">
+  <div class="form-group">
+        <label class="col-md-2 control-label" for="lect_no">Question 1</label>  
+        <div class="col-md-5">
+        <input id="course_name" name="course_name" type="text" placeholder="Enter Question body" class="form-control input-md" required="">
+        <!-- <span class="help-block">help</span>   -->
+        </div>
+        <a href="#" class="btn btn-default rem_question"><i class="glyphicon glyphicon-trash"></i></a> <a href="#" class="btn btn-default add_question"><i class="glyphicon glyphicon-plus"></i></a>
+  </div>
+  <!-- text area -->
+        <div class="form-group">
+        <label class="col-md-2 control-label" for="details">Answer</label>
+        <div class="col-md-5">                     
+          <textarea class="form-control" id="details" name="details">detailed answer</textarea>
+        </div>
+      </div>   
+  <hr class="featurette-divider">
+</div>
+</fieldset></form>
+</div>
+</div>
+</div>
+
+
+  <div class="callout callout-danger">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis saepe, dicta doloremque temporibus quae aliquid nemo! Dignissimos obcaecati illo in cumque ea eum nemo laborum eaque, cupiditate eveniet iste perspiciatis.</p>
+  </div>
+<!-- end page -->
+</div></div>
+</div>  
+    <div class="row">
+        <div class="col-xs-12"><div class="alert alert-success alert-dismissable text-center" style="border-radius: 0px;">
+            all rights reserved
+        </div></div>
+    </div> 
+</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dropdown_enhancement.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/add_buttons.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/datepicker.js"></script>
+</body>
+</html>
+
+</body>
+</html>

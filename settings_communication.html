@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Rizzmi</title>
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <link href="css/dropdown_enhancement.css" rel="stylesheet">
+    
+	<link href="css/StudentMain.css" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" 
+        data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Rizzmi</a>
+        <ul class="breadcrumb list-inline">
+          <li>Settings</li>
+          <li class="active"><a href="Manage_Dashboard.html">Communication</a></li>
+        </ul>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin Admin <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+     <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li>
+                <a href="Index.html" data-toggle="collapse" data-target="#home">
+                <i class="fa fa-fw fa-home"></i> Home </a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#manage">
+                <i class="fa fa-fw fa-dashboard"></i> Manage</h3> <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="manage" class="collapse">
+                    <li><a href="Manage_Dashboard.html">Dashboard</a></li>
+                    <li><a href="manage_courses.html">Courses</a></li>
+                    <li><a href="manage_students.html">Students</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Admins</a></li>
+                    <li><a href="#">Financial</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#analyze">
+                <i class="fa fa-fw fa-signal"></i> Analyze <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="analyze" class="collapse">
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Financial</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#settings">
+                <i class="fa fa-fw fa-cog"></i> Settings <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="settings" class="collapse">
+                    <li><a href="settings_Basic.html">General</a></li>
+                    <li><a href="settings_admin.html">Admins</a></li>
+                    <li><a href="settings_communication.html">Communication</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Addons</a></li>
+                </ul>
+            </li>                   
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+<div id="page-wrapper"><div class="container-fluid"> 
+<!-- start page  -->
+<div class="row">
+    <section class="col-xs-12">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#Email" data-toggle="tab"><h4>Email</h4></a></li>
+        <li><a href="#SMS" data-toggle="tab"><h4>SMS</h4></a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="Email">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-header">Course regestration - confirmation Email
+                    <span class="pull-right">
+                        <span class="input-group">
+                            <span id="radioBtn" class="btn-group">
+                                <a class="btn btn-success btn-sm active" data-toggle="onorof" data-title="Y">On</a>
+                                <a class="btn btn-success btn-sm notActive" data-toggle="onorof" data-title="N">Off</a>
+                            </span>
+                            <input type="hidden" name="onorof" id="onorof">
+                        </span>
+                    </span>
+                    </h4>
+                </div>
+                <div class="col-md-6 col-md-offset-2">
+                    <div class="alert alert-info">
+                        <p> This email gets sent after regstration in  a new course</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                <form class="form-horizontal">
+                <fieldset>
+                    <!-- Text input-->
+                    <div class="form-group">
+                    <label class="col-md-2 control-label" for="mailSubject">Email Subject</label>  
+                    <div class="col-md-6">
+                    <input id="mailSubject" name="mailSubject" type="text" placeholder="Regestration Confirmation for {course name}" class="form-control input-md" required="">
+                    </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                    <label class="col-md-2 control-label" for="emailBody">Subject</label>
+                    <div class="col-md-6">                     
+                        <textarea class="form-control" id="emailBody" name="emailBody" style="height: 250px">
+Hi {{first_name}},
+
+your registration at {{course_ name}} has been confirmed.
+
+Here are the details again:
+
+Your address:
+{{address}}
+
+Plan: {{plan}}, {{#free_plan}}no monthly fee{{/free_plan}}{{^free_plan}}{{plan_price}}{{/free_plan}}
+{{#extras}}Extras: {{extras}}{{/extras}}
+
+{{#terms}}
+                        </textarea>
+                    </div>
+                    </div>
+                </fieldset>
+                </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-header">Invitation Email
+                    <span class="pull-right">
+                        <span class="input-group">
+                            <span id="radioBtn" class="btn-group">
+                                <a class="btn btn-success btn-sm active" data-toggle="onorof" data-title="Y">On</a>
+                                <a class="btn btn-success btn-sm notActive" data-toggle="onorof" data-title="N">Off</a>
+                            </span>
+                            <input type="hidden" name="onorof" id="onorof">
+                        </span>
+                    </span>
+                    </h4>
+                </div>
+                <div class="col-md-6 col-md-offset-2">
+                    <div class="alert alert-info">
+                        <p> This email is sent when inviting a student to Register to an existing course.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                <form class="form-horizontal">
+                <fieldset>
+                    <!-- Text input-->
+                    <div class="form-group">
+                    <label class="col-md-2 control-label" for="mailSubject">Email Subject</label>  
+                    <div class="col-md-6">
+                    <input id="mailSubject" name="mailSubject" type="text" placeholder="Invitation to join {{course_name}}" class="form-control input-md" required="">
+                    </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                    <label class="col-md-2 control-label" for="emailBody">Subject</label>
+                    <div class="col-md-6">                     
+                        <textarea class="form-control" id="emailBody" name="emailBody" style="height: 250px">
+Hi {{first_name}},
+
+We are now managing our coworking space with Cobot.
+
+Please click the following link and sign up/log in:
+
+{{signup_link}}
+
+                        </textarea>
+                    </div>
+                    </div>
+                </fieldset>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="SMS">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-header">Course regestration - confirmation SMS
+                    <span class="pull-right">
+                        <span class="input-group">
+                            <span id="radioBtn" class="btn-group">
+                                <a class="btn btn-success btn-sm active" data-toggle="onorof" data-title="Y">On</a>
+                                <a class="btn btn-success btn-sm notActive" data-toggle="onorof" data-title="N">Off</a>
+                            </span>
+                            <input type="hidden" name="onorof" id="onorof">
+                        </span>
+                    </span>
+                    </h4>
+
+                    <div class="col-md-12">
+                    <form class="form-horizontal">
+                    <fieldset>
+                        <!-- Textarea -->
+                        <div class="form-group"><div class="col-md-6">                     
+                            <textarea class="form-control" id="emailBody" name="emailBody" style="height: 100px">invitation sms</textarea>
+                        </div></div>
+                    </fieldset>
+                    </form>
+                    </div>
+
+                    <div class="col-md-6">
+                    <div class="alert alert-info">
+                        <p> This sms gets sent after regstration in  a new course</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+<div class="row">
+                <div class="col-md-12">
+                    <h4 class="page-header">Invitation SMS
+                    <span class="pull-right">
+                        <span class="input-group">
+                            <span id="radioBtn" class="btn-group">
+                                <a class="btn btn-success btn-sm active" data-toggle="onorof" data-title="Y">On</a>
+                                <a class="btn btn-success btn-sm notActive" data-toggle="onorof" data-title="N">Off</a>
+                            </span>
+                            <input type="hidden" name="onorof" id="onorof">
+                        </span>
+                    </span>
+                    </h4>
+
+                    <div class="col-md-12">
+                    <form class="form-horizontal">
+                    <fieldset>
+                        <!-- Textarea -->
+                        <div class="form-group"><div class="col-md-6">                     
+                            <textarea class="form-control" id="emailBody" name="emailBody" style="height: 100px">invitation sms</textarea>
+                        </div></div>
+                    </fieldset>
+                    </form>
+                    </div>
+
+                    <div class="col-md-6">
+                    <div class="alert alert-info">
+                        <p> This sms gets sent after regstration in  a new course</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>                                                                                 
+    </div>                        
+    </section>
+</div>     
+<!-- end page -->
+</div></div>
+</div>  
+    <div class="row">
+        <div class="col-xs-12"><div class="alert alert-success alert-dismissable text-center" style="border-radius: 0px;">
+            all rights reserved
+        </div></div>
+    </div> 
+</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/dropdown_enhancement.js"></script>
+
+    <script>
+		$('#radioBtn a').on('click', function(){
+		var sel = $(this).data('title');
+		var tog = $(this).data('toggle');
+		$('#'+tog).prop('value', sel);
+		
+		$('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+		$('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+		})
+    </script>
+
+</body>
+</html>
+
+</body>
+</html>

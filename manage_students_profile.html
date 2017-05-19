@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Rizzmi</title>
+
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <link href="css/dropdown_enhancement.css" rel="stylesheet">
+    <link href="css/Main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="wrapper">
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" 
+        data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Rizzmi</a>
+        <ul class="breadcrumb list-inline">
+          <li>Manage</li>
+          <li><a href="manage_students.html">Students</a></li>
+          <li class="active"><a href="manage_students_profile.html">Student Profile</a></li>
+        </ul>
+    </div>
+    <!-- Top Menu Items -->
+    <ul class="nav navbar-right top-nav">
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin Admin <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li>
+                <a href="Index.html" data-toggle="collapse" data-target="#home">
+                <i class="fa fa-fw fa-home"></i> Home </a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#manage">
+                <i class="fa fa-fw fa-dashboard"></i> Manage</h3> <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="manage" class="collapse">
+                    <li><a href="Manage_Dashboard.html">Dashboard</a></li>
+                    <li><a href="manage_courses.html">Courses</a></li>
+                    <li><a href="manage_students.html">Students</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Admins</a></li>
+                    <li><a href="#">Financial</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#analyze">
+                <i class="fa fa-fw fa-signal"></i> Analyze <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="analyze" class="collapse">
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Financial</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" data-target="#settings">
+                <i class="fa fa-fw fa-cog"></i> Settings <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="settings" class="collapse">
+                    <li><a href="settings_Basic.html">General</a></li>
+                    <li><a href="settings_admin.html">Admins</a></li>
+                    <li><a href="settings_communication.html">Communication</a></li>
+                    <li><a href="#">Payment</a></li>
+                    <li><a href="#">Addons</a></li>
+                </ul>
+            </li>                   
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+
+<div id="page-wrapper" style="min-height: 540px;"><div class="container-fluid"> 
+<!-- start page  -->
+<div class="alert alert-info">
+    <p> <i class="glyphicon glyphicon-cog"></i> veritatis aliquam modi, non dolorum quae nesciunt, ut deleniti consectetur culpa, similique doloribus quod magnam veniam quibusdam repellat!</p>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-8" style="margin-top: 20px;">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-1">
+                        <img src="img/me-flat.png" class="img img-responsive img-circle">
+                    </div>
+                    <div class="col-md-8">
+                        <h2 style="margin-top: 70px;">Student Name</h2>
+                        <h4>Electrical Engineer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-1 pull-right">
+                <h1 style="margin-top: 110px;"> 
+                    <a href="#" class="text-success"><i class="fa fa-bell-o"></i></a>
+                    <a href="#" class="text-success"><i class="fa fa-envelope-o"></i></a>
+                    <a href="#" class="text-success"><i class="glyphicon glyphicon-phone"></i></a>
+                    <a href="#" class="text-danger"><i class="glyphicon glyphicon-trash"></i></a>
+                    
+                </h1>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td><strong>Phone: </strong></td>
+                                <td>(02) 01000 46 23 40</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Email: </strong></td>
+                                <td>Example.example@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Field of Study: </strong></td>
+                                <td>Marketing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Age: </strong></td>
+                                <td>28 years</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Date of Birth: </strong></td>
+                                <td>22 OCT 1990</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gender: </strong></td>
+                                <td>male</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address: </strong></td>
+                                <td>43 mnas.st NYC</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12" style="margin-top: -5px;">
+                        <a href="#" class="btn btn-success " style="width: 125px; height: 125px; margin-bottom: 20px; margin-right:20px;"><h4 style="padding-top: 40px;">Attended<br>(3)</h4></a>
+                        <a href="#" class="btn btn-info" style="width: 125px; height: 125px; margin-bottom: 20px;"><h4 style="padding-top: 40px;">Sign Up<br>(6)</h4></a>
+                        <a href="#" class="btn btn-warning " style="width: 125px; height: 125px; margin-right:20px;"><h4 style="padding-top: 40px;">Canceled<br>(1)</h4>
+                        <a href="#" class="btn btn-danger" style="width: 125px; height: 125px"><h4 style="padding-top: 40px;">Quit<br>(0)</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 style="margin: 0; padding: 0">Courses</h4>
+    </div>
+    <div class="panel-body">
+        <div class="btn-group pull-right" style="margin-bottom: 20px;">
+            <button class="btn btn-success btn-filter" data-target="Running">Attended</button>
+            <button class="btn btn-info btn-filter" data-target="Comming">Sign Up</button>
+            <button class="btn btn-warning btn-filter" data-target="Expired">Canceled</button>
+            <button class="btn btn-danger btn-filter" data-target="Canceled">Quit</button>
+            <button class="btn btn-default btn-filter" data-target="all">All</button>
+        </div>
+        <div class="table-container">
+            <table class="table table-filter table-striped">
+                <thead >
+                    <tr>
+                        <th>state</th>
+                        <th>Course Name</th>
+                        <th>Instructor</th>
+                        <th>Rating</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-status="Running">
+                        <td><p>attended</p></td>
+                        <td>course name</td>
+                        <td>Instructor</td>
+                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                        <td>6/13/2016</td>
+                    </tr>
+                    <tr data-status="Comming">
+                        <td><p>attended</p></td>
+                        <td>course name</td>
+                        <td>Instructor</td>
+                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                        <td>6/13/2016</td>
+                    </tr>
+                    <tr data-status="Expired">
+                        <td><p>attended</p></td>
+                        <td>course name</td>
+                        <td>Instructor</td>
+                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                        <td>6/13/2016</td>
+                    </tr>
+                    <tr data-status="Comming">
+                        <td><p>attended</p></td>
+                        <td>course name</td>
+                        <td>Instructor</td>
+                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                        <td>6/13/2016</td>
+                    </tr>
+                    <tr data-status="Canceled">
+                        <td><p>attended</p></td>
+                        <td>course name</td>
+                        <td>Instructor</td>
+                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                        <td>6/13/2016</td>
+                    </tr>
+                    <tr data-status="Running">
+                        <td><p>attended</p></td>
+                        <td>course name</td>
+                        <td>Instructor</td>
+                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                        <td>6/13/2016</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 style="margin: 0; padding: 0">Communication History</h4>
+    </div>
+    <div class="panel-body">
+        <div data-spy="scroll" class="tabbable-panel">
+        <div class="tabbable-line">
+          <ul class="nav nav-pills ">
+            <li class="active"><a href="#message" data-toggle="tab">Messages </a></li>
+            <li><a href="#email" data-toggle="tab"> Email</a></li>
+            <li><a href="#sms" data-toggle="tab"> SMS</a></li>
+          </ul>
+          <div class="tab-content" style="margin-top: 20px;">
+            <div class="tab-pane active" id="message">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>5 mins ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>28 mins ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>11 hours ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>15 hours ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>Yesterday</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>4 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>12 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>12 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>14 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>15 days ago</td>
+                        </tr>
+                      </tbody>
+                    </table><!-- /.table -->
+                  </div><!-- /.mail-box-messages -->
+                </div>
+             <div class="tab-pane" id="email">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                      <tbody>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>5 mins ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>28 mins ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>11 hours ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>15 hours ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>Yesterday</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>2 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>4 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td></td>
+                          <td>12 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>12 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>14 days ago</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox"></td>
+                          <td><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
+                          <td><a href="read-mail.html">Sender</a></td>
+                          <td><b>Sender</b> - Trying to find a solution to this problem...</td>
+                          <td><i class="fa fa-paperclip"></i></td>
+                          <td>15 days ago</td>
+                        </tr>
+                      </tbody>
+                    </table><!-- /.table -->
+                  </div><!-- /.mail-box-messages -->
+            </div>
+            <div class="tab-pane" id="sms">
+                <div class="table-rsponsive">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+                             <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#"><i class="fa fa-star"></i></a></td>
+                                <td><a href="read-mail.html">Sender</a></td>
+                                <td><b>Schedual update</b> Please Update your schedual to ...</td>
+                                <td>15 days ago</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- end page -->
+</div></div>
+</div>  
+    <div class="row">
+        <div class="col-xs-12"><div class="alert alert-success alert-dismissable text-center" style="border-radius: 0px; margin-bottom: 0">
+            all rights reserved
+        </div></div>
+    </div> 
+</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/dropdown_enhancement.js"></script>
+        <script src="js/filter-table.js"></script>
+
+
+</body>
+</html>
+
+</body>
+</html>
