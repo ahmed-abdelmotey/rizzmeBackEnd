@@ -1,5 +1,5 @@
 # Rizzme
-![Rizzme](https://i.imgur.com/0vJQK6Z.png)
+<p align="center"> <img src="https://i.imgur.com/0vJQK6Z.png"></p>
 
 ## About Rizzme
 
