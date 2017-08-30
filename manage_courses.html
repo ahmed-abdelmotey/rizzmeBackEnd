@@ -1,777 +1,892 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Rizzmi</title>
+    <title>Rizzmi</title>
 
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/sb-admin.css" rel="stylesheet">
     <link href="css/plugins/morris.css" rel="stylesheet">
     <link href="css/dropdown_enhancement.css" rel="stylesheet">
     <link href="css/filter-table.css" rel="stylesheet">
     <link href="css/Main.css" rel="stylesheet">
     <script src="js/Chart.js"></script>
-    
+
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<div id="wrapper">
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" 
-        data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<body>
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Rizzmi</a>
-        <ul class="breadcrumb list-inline">
-          <li>Manage</li>
-          <li class="active"><a href="manage_courses.html">Courses</a></li>
-        </ul>
-    </div>
-    <!-- Top Menu Items -->
-    <ul class="nav navbar-right top-nav">
-        <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin Admin <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                <a class="navbar-brand" href="index.html">Rizzmi</a>
+                <ul class="breadcrumb list-inline">
+                    <li class="active">Manage</li>
+                    <li class="active">Courses</li>
+                </ul>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Admin Admin <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-        </li>
-    </ul>
-    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav side-nav">
-            <li>
-                <a href="Index.html" data-toggle="collapse" data-target="#home">
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html" data-toggle="collapse" data-target="#home">
                 <i class="fa fa-fw fa-home"></i> Home </a>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#manage">
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#manage">
                 <i class="fa fa-fw fa-dashboard"></i> Manage</h3> <i class="fa fa-fw fa-caret-down"></i>
                 </a>
-                <ul id="manage" class="collapse">
-                    <li><a href="Manage_Dashboard.html">Dashboard</a></li>
-                    <li><a href="manage_courses.html">Courses</a></li>
-                    <li><a href="manage_students.html">Students</a></li>
-                    <li><a href="#">Trainers</a></li>
-                    <li><a href="#">Admins</a></li>
-                    <li><a href="#">Financial</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#analyze">
+                        <ul id="manage" class="collapse">
+                            <li><a href="Manage_Dashboard.html">Dashboard</a></li>
+                            <li><a href="manage_courses.html">Courses</a></li>
+                            <li><a href="manage_students.html">Students</a></li>
+                            <!-- <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Admins</a></li> -->
+                            <!-- <li><a href="#">Communication</a></li> -->
+                            <!-- <li><a href="#">Financial</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#analyze">
                 <i class="fa fa-fw fa-signal"></i> Analyze <i class="fa fa-fw fa-caret-down"></i>
                 </a>
-                <ul id="analyze" class="collapse">
-                    <li><a href="#">General</a></li>
-                    <li><a href="#">Customers</a></li>
+                        <ul id="analyze" class="collapse">
+                            <li><a href="Analysis_Basic.html">General</a></li>
+                            <!-- <li><a href="#">Customers</a></li>
                     <li><a href="#">Courses</a></li>
-                    <li><a href="#">Financial</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="javascript:;" data-toggle="collapse" data-target="#settings">
+                    <li><a href="#">Financial</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#settings">
                 <i class="fa fa-fw fa-cog"></i> Settings <i class="fa fa-fw fa-caret-down"></i>
                 </a>
-                <ul id="settings" class="collapse">
-                    <li><a href="settings_Basic.html">General</a></li>
-                    <li><a href="settings_admin.html">Admins</a></li>
-                    <li><a href="settings_communication.html">Communication</a></li>
+                        <ul id="settings" class="collapse">
+                            <li><a href="settings_Basic.html">General</a></li>
+                            <li><a href="settings_admin.html">Admins</a></li>
+                            <li><a href="settings_communication.html">Communication</a></li>
+                            <!-- <li><a href="#">Colors</a></li>
                     <li><a href="#">Payment</a></li>
                     <li><a href="#">Addons</a></li>
+                    <li><a href="#">Help desk</a></li> -->
+                        </ul>
+                    </li>
                 </ul>
-            </li>                   
-        </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-</nav>
-
-<div id="page-wrapper" style="min-height: 540px;"><div class="container-fluid"> 
-    <span id="topspan"></span>
-<!-- start page  -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="alert alert-info"><i class="glyphicon glyphicon-user"></i> Maxime tempore deserunt repudiandae iste numquam ad velit hic animi, dignissimos recusandae quam eos, tenetur quos.</div>
             </div>
-        </div>
-<div class="row">
-    <div class="col-md-9">
-        <div class="row">
-            <section class="content col-xs-12">
-				<div class="panel panel-default">
-					<div class="panel-body">
-                        <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-success btn-filter" data-target="Running">Running</button>
-                            <button type="button" class="btn btn-info btn-filter" data-target="Comming">Comming</button>
-                            <button type="button" class="btn btn-warning btn-filter" data-target="Expired">Expired</button>
-                            <button type="button" class="btn btn-danger btn-filter" data-target="Canceled">Canceled</button>
-                            <button type="button" class="btn btn-default btn-filter" data-target="all">All</button>
-                        </div>
-						<div class="table-container">
-							<table class="table table-filter">
-								<thead >
-                                    <tr>
-                                        <th>state</th>
-                                        <th style="width: 120px">Course Name</th>
-                                        <th>Instructor</th>
-                                        <th>Rating</th>
-                                        <th>Date</th>
-                                        <th>Users</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                
-                                <tbody>
-                                    <!-- Red : #D9534F || Yellow : #F0AD4E || Blue : #5BC0DE || Green : #5CB85C-->
-									<tr data-status="Running">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
-                                            <canvas id="serverstatus01" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 100,
-                                                        color:"#5cb85c"
-                                                    },
-                                                    {
-                                                        value : 0,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Canceled">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
-                                            <canvas id="serverstatus02" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 60,
-                                                        color:"#D9534F"
-                                                    },
-                                                    {
-                                                        value : 40,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Comming">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
-                                            <canvas id="serverstatus03" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 20,
-                                                        color:"#5BC0DE"
-                                                    },
-                                                    {
-                                                        value : 80,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Expired">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
-                                            <canvas id="serverstatus04" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 80,
-                                                        color:"#F0AD4E"
-                                                    },
-                                                    {
-                                                        value : 20,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus04").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Running">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
-                                            <canvas id="serverstatus05" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 100,
-                                                        color:"#5cb85c"
-                                                    },
-                                                    {
-                                                        value : 0,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus05").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Canceled">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
-                                            <canvas id="serverstatus06" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 60,
-                                                        color:"#D9534F"
-                                                    },
-                                                    {
-                                                        value : 40,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus06").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Comming">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
-                                            <canvas id="serverstatus07" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 20,
-                                                        color:"#5BC0DE"
-                                                    },
-                                                    {
-                                                        value : 80,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus07").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Expired">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
-                                            <canvas id="serverstatus08" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 80,
-                                                        color:"#F0AD4E"
-                                                    },
-                                                    {
-                                                        value : 20,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus08").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Running">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
-                                            <canvas id="serverstatus09" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 100,
-                                                        color:"#5cb85c"
-                                                    },
-                                                    {
-                                                        value : 0,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus09").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Canceled">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
-                                            <canvas id="serverstatus10" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 60,
-                                                        color:"#D9534F"
-                                                    },
-                                                    {
-                                                        value : 40,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus10").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Comming">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
-                                            <canvas id="serverstatus11" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 20,
-                                                        color:"#5BC0DE"
-                                                    },
-                                                    {
-                                                        value : 80,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus11").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Expired">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
-                                            <canvas id="serverstatus12" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 80,
-                                                        color:"#F0AD4E"
-                                                    },
-                                                    {
-                                                        value : 20,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus12").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Running">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
-                                            <canvas id="serverstatus13" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 100,
-                                                        color:"#5cb85c"
-                                                    },
-                                                    {
-                                                        value : 0,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus13").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Canceled">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
-                                            <canvas id="serverstatus14" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 60,
-                                                        color:"#D9534F"
-                                                    },
-                                                    {
-                                                        value : 40,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus14").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Comming">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
-                                            <canvas id="serverstatus15" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 20,
-                                                        color:"#5BC0DE"
-                                                    },
-                                                    {
-                                                        value : 80,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus15").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-									<tr data-status="Expired">
-                                        <td style="padding-bottom: 0;">
-                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
-                                            <canvas id="serverstatus16" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
-                                            <script>
-                                                var doughnutData = [
-                                                    {
-                                                        value: 80,
-                                                        color:"#F0AD4E"
-                                                    },
-                                                    {
-                                                        value : 20,
-                                                        color : "#f9f9f9"
-                                                    }
-                                                ];
-                                                var myDoughnut = new Chart(document.getElementById("serverstatus16").getContext("2d")).Doughnut(doughnutData,{
-                                                    "segmentStrokeWidth" : 1,"percentageInnerCutout" : 80});
-                                            </script>
-                                        </td>
-                                        <td>course name</td>
-                                        <td>Instructor</td>
-                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
-                                        <td>6/13/2016</td>
-                                        <td>
-                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
-                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
-                                        </td>
-                                        <td>
-                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
-                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
-                                        </td>
-                                    </tr><!-- ROW END -->
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-		</section>
-        </div>  
-    </div>
-    <div class="col-md-3">
-        <a href="course_registeration.html" class="btn btn-success" style="width: 100%; margin-bottom: 15px;"><h4><i class="glyphicon glyphicon-plus"></i> Add New Course</h4></a>
-        <div class="panel panel-success text-center">
-            <div class="panel-heading"><h4 style="margin: 0;"> Search Filters</h4></div>
-            <div class="panel-body">
-                <div class="row  text-left">
+            <!-- /.navbar-collapse -->
+        </nav>
+
+
+        <div id="page-wrapper" style="min-height: 540px;">
+            <div class="container-fluid">
+                <span id="topspan"></span>
+                <!-- start page  -->
+                <div class="row">
                     <div class="col-md-12">
-                        <div class="form-group">
-                            <select id="language" name="language" class="form-control">
+                        <div class="alert alert-info"><i class="glyphicon glyphicon-user"></i> Maxime tempore deserunt repudiandae iste numquam ad velit
+                            hic animi, dignissimos recusandae quam eos, tenetur quos.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <section class="content col-xs-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div class="btn-group pull-right">
+                                            <button type="button" class="btn btn-success btn-filter" data-target="Running">Running</button>
+                                            <button type="button" class="btn btn-info btn-filter" data-target="Comming">Comming</button>
+                                            <button type="button" class="btn btn-warning btn-filter" data-target="Expired">Expired</button>
+                                            <button type="button" class="btn btn-danger btn-filter" data-target="Canceled">Canceled</button>
+                                            <button type="button" class="btn btn-default btn-filter" data-target="all">All</button>
+                                        </div>
+                                        <div class="table-container">
+                                            <table class="table table-filter">
+                                                <thead>
+                                                    <tr>
+                                                        <th>state</th>
+                                                        <th style="width: 120px">Course Name</th>
+                                                        <th>Instructor</th>
+                                                        <th>Rating</th>
+                                                        <th>Date</th>
+                                                        <th>Users</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <!-- Red : #D9534F || Yellow : #F0AD4E || Blue : #5BC0DE || Green : #5CB85C-->
+                                                    <tr data-status="Running">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
+                                                            <canvas id="serverstatus01" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 100,
+                                                                        color: "#5cb85c"
+                                                                    },
+                                                                    {
+                                                                        value: 0,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus01").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Canceled">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
+                                                            <canvas id="serverstatus02" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 60,
+                                                                        color: "#D9534F"
+                                                                    },
+                                                                    {
+                                                                        value: 40,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus02").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Comming">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
+                                                            <canvas id="serverstatus03" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 20,
+                                                                        color: "#5BC0DE"
+                                                                    },
+                                                                    {
+                                                                        value: 80,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus03").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Expired">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
+                                                            <canvas id="serverstatus04" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 80,
+                                                                        color: "#F0AD4E"
+                                                                    },
+                                                                    {
+                                                                        value: 20,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus04").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Running">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
+                                                            <canvas id="serverstatus05" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 100,
+                                                                        color: "#5cb85c"
+                                                                    },
+                                                                    {
+                                                                        value: 0,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus05").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Canceled">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
+                                                            <canvas id="serverstatus06" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 60,
+                                                                        color: "#D9534F"
+                                                                    },
+                                                                    {
+                                                                        value: 40,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus06").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Comming">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
+                                                            <canvas id="serverstatus07" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 20,
+                                                                        color: "#5BC0DE"
+                                                                    },
+                                                                    {
+                                                                        value: 80,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus07").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Expired">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
+                                                            <canvas id="serverstatus08" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 80,
+                                                                        color: "#F0AD4E"
+                                                                    },
+                                                                    {
+                                                                        value: 20,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus08").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Running">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
+                                                            <canvas id="serverstatus09" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 100,
+                                                                        color: "#5cb85c"
+                                                                    },
+                                                                    {
+                                                                        value: 0,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus09").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Canceled">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
+                                                            <canvas id="serverstatus10" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 60,
+                                                                        color: "#D9534F"
+                                                                    },
+                                                                    {
+                                                                        value: 40,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus10").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Comming">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
+                                                            <canvas id="serverstatus11" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 20,
+                                                                        color: "#5BC0DE"
+                                                                    },
+                                                                    {
+                                                                        value: 80,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus11").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Expired">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
+                                                            <canvas id="serverstatus12" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 80,
+                                                                        color: "#F0AD4E"
+                                                                    },
+                                                                    {
+                                                                        value: 20,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus12").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Running">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>99%</strong></p>
+                                                            <canvas id="serverstatus13" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 100,
+                                                                        color: "#5cb85c"
+                                                                    },
+                                                                    {
+                                                                        value: 0,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus13").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Canceled">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>60%</strong></p>
+                                                            <canvas id="serverstatus14" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 60,
+                                                                        color: "#D9534F"
+                                                                    },
+                                                                    {
+                                                                        value: 40,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus14").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Comming">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>20%</strong></p>
+                                                            <canvas id="serverstatus15" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 20,
+                                                                        color: "#5BC0DE"
+                                                                    },
+                                                                    {
+                                                                        value: 80,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus15").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                    <tr data-status="Expired">
+                                                        <td style="padding-bottom: 0;">
+                                                            <p style="position: relative;top: 15px; left: 17px; margin-bottom: -25px"><strong>80%</strong></p>
+                                                            <canvas id="serverstatus16" height="60" width="60" style="width: 60px; height: 60px;"></canvas>
+                                                            <script>
+                                                                var doughnutData = [{
+                                                                        value: 80,
+                                                                        color: "#F0AD4E"
+                                                                    },
+                                                                    {
+                                                                        value: 20,
+                                                                        color: "#f9f9f9"
+                                                                    }
+                                                                ];
+                                                                var myDoughnut = new Chart(document.getElementById(
+                                                                    "serverstatus16").getContext("2d")).Doughnut(
+                                                                    doughnutData, {
+                                                                        "segmentStrokeWidth": 1,
+                                                                        "percentageInnerCutout": 80
+                                                                    });
+                                                            </script>
+                                                        </td>
+                                                        <td>course name</td>
+                                                        <td>Instructor</td>
+                                                        <td><i class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star"></i>
+                                                            <i
+                                                                class="glyphicon glyphicon-star"></i><i class="glyphicon glyphicon-star-empty"></i><i class="glyphicon glyphicon-star-empty"></i></td>
+                                                        <td>6/13/2016</td>
+                                                        <td>
+                                                            <p class="btn btn-success"><strong>36</strong><br><small>Confirm</small></p>
+                                                            <p class="btn btn-warning"><strong>50</strong><br><small>Sign Up</small></p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#"><i class="glyphicon glyphicon-plus"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>&nbsp;&nbsp;&nbsp;
+                                                            <a href="#"><i class="glyphicon glyphicon-trash"></i></a>
+                                                        </td>
+                                                    </tr>
+                                                    <!-- ROW END -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="course_registeration.html" class="btn btn-success" style="width: 100%; margin-bottom: 15px;">
+                            <h4><i class="glyphicon glyphicon-plus"></i> Add New Course</h4>
+                        </a>
+                        <div class="panel panel-success text-center">
+                            <div class="panel-heading">
+                                <h4 style="margin: 0;"> Search Filters</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row  text-left">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <select id="language" name="language" class="form-control">
                                 <option value="1">Category (study fields)</option>
                                 <option value="2">Category one</option>
                                 <option value="2">Category two</option>
                                 <option value="2">Category three</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <select id="language" name="language" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="language" name="language" class="form-control">
                                 <option value="1">Status</option>
                                 <option value="2">Status one</option>
                                 <option value="2">Status two</option>
                                 <option value="2">Status three</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <select id="language" name="language" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="language" name="language" class="form-control">
                                 <option value="1">Rating</option>
                                 <option value="2">Rating one</option>
                                 <option value="2">Rating two</option>
                                 <option value="2">Rating three</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <select id="language" name="language" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="language" name="language" class="form-control">
                                 <option value="1">Trainer</option>
                                 <option value="2">Trainer one</option>
                                 <option value="2">Trainer two</option>
                                 <option value="2">Trainer three</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <select id="language" name="language" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="language" name="language" class="form-control">
                                 <option value="1">Attendees</option>
                                 <option value="2">Attendees one</option>
                                 <option value="2">Attendees two</option>
                                 <option value="2">Attendees three</option>
                             </select>
-                        </div>
-                        <div class="form-group">
-                            <select id="language" name="language" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <select id="language" name="language" class="form-control">
                                 <option value="1">Coupon</option>
                                 <option value="2">Coupon one</option>
                                 <option value="2">Coupon two</option>
                                 <option value="2">Coupon three</option>
                             </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+
+                <!-- end page -->
             </div>
         </div>
     </div>
-</div>
-   
-
-<!-- end page -->
-</div></div>
-</div>  
     <div class="row">
-        <div class="col-xs-12"><div class="alert alert-success alert-dismissable text-center" style="border-radius: 0px; margin-bottom: 0">
-            all rights reserved
-        </div></div>
-    </div> 
-</div>
+        <div class="col-xs-12">
+            <div class="alert alert-success alert-dismissable text-center" style="border-radius: 0px; margin-bottom: 0">
+                all rights reserved
+            </div>
+        </div>
+    </div>
+    </div>
 
-<a href="#topspan" class="btn btn-default" data-spy="affix" style="bottom:  75px; right: 25px;  z-index: 10; margin: 0; padding: 0;" data-offset-top="100">
-    <h1 style="margin: 0;padding: 5px 5px 0 5px; "><i class="glyphicon glyphicon-menu-up"></i></h1>
-</a>
+    <a href="#topspan" class="btn btn-default" data-spy="affix" style="bottom:  75px; right: 25px;  z-index: 10; margin: 0; padding: 0;"
+        data-offset-top="100">
+        <h1 style="margin: 0;padding: 5px 5px 0 5px; "><i class="glyphicon glyphicon-menu-up"></i></h1>
+    </a>
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/rating.js"></script>
     <script src="js/dropdown_enhancement.js"></script>
     <script src="js/filter-table.js"></script>
 
 
 </body>
+
 </html>
 
 </body>
+
 </html>
