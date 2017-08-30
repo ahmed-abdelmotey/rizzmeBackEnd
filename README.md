@@ -1,6 +1,5 @@
-<div align="center">
 # Rizzme
- <img src="https://i.imgur.com/0vJQK6Z.png">
+![Rizzme](https://i.imgur.com/0vJQK6Z.png)
 
 ## About Rizzme
 
@@ -11,4 +10,4 @@ rizzme was a proposal prototype for a competition about enhancing education in e
 unfortunatly we were not successful at the competition, and the business needs changed a bit by facebook pushing forward new solutions for education therefore we stopped this project
 
 > you can check the front end part here: [Rizzme](https://ahmed-abdelmotey.github.io/RizzmeStudentPortal/)
-</div>
+
